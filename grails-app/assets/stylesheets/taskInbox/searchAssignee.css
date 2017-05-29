@@ -1,0 +1,104 @@
+.dataTables_length {
+    margin-top: 10px;
+}
+
+#searchTbl th{
+	color: #fff;
+	background-color: #404040;
+	border-color: #fff;
+	border: 1px solid #fff
+}
+
+#searchTbl tr td{
+	border: 1px solid #fff
+}
+
+#searchTbl_filter
+{
+    float: none;
+    text-align: left;
+    margin-bottom: 15px;
+    
+}
+#searchTbl_filter label{
+	width:100%;
+}
+
+#searchTbl_filter label input{
+	width:70%;
+}
+
+
+
+#searchTbl_wrapper .bottom .dataTables_length {
+   
+    margin-left: 20px;
+}
+
+/** Modal Box **/
+
+.input-group-addon{
+	padding: 8px 12px;
+}
+
+
+#search-modal .modal-open{
+    font-family: inherit;
+}
+
+#search-modal .modal-dialog {
+  position:absolute;
+  top:50% !important;
+  transform: translate(0, -50%) !important;
+  -ms-transform: translate(0, -50%) !important;
+  -webkit-transform: translate(0, -50%) !important;
+  margin:auto 7%;
+  width:84%;
+  height:92%;
+}
+#search-modal .modal-content {
+  min-height:100%;
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0; 
+}
+#search-modal .modal-body {
+  position:absolute;
+  top:38px; 
+  bottom:5px;  
+  left:0;
+  right:0;
+  overflow-y:auto;
+}
+#search-modal .modal-footer {
+  position:absolute;
+  bottom:0;
+  left:0;
+  right:0;
+}
+
+.input-add{
+	    border-left: 1px solid #ccc !important;
+	    border-right: 1px solid #ccc !important;
+}
+
+#search-modal .modal-header{
+	color: #fff;
+    background-color: #3E3175;
+    border-color: #3E3175;
+    padding: 7px 15px 15px 15px;
+    height: 6%;
+}
+
+#search_block{
+	padding-top: 0px;
+}
+#search-modal .modal-header .close {
+    color: #fff;
+}
+.link-name{
+	color: #d92231;
+    text-decoration: none !important;
+}

@@ -1,0 +1,680 @@
+/*
+ * Application Skin CSS
+ */
+
+h3 {
+    color: #3E3175;
+}
+
+.panel-app {
+     border-color: #3E3175;
+     margin-top: 0px;
+     margin-bottom: 0px;
+ }
+
+.panel-app > .panel-heading {
+    color: #fff;
+    background-color: #3E3175;
+    border-color: #3E3175;
+}
+
+.app-main {
+    font-family: "Roboto", Arial, Helvetica, sans-serif !important;
+    margin-left: 15px !important;
+    margin-right: 70px;
+}
+
+.glyphicon-app {
+    font-size: 18px;
+}
+
+.app-heading {
+    font-family: "Roboto", Arial, Helvetica, sans-serif !important;
+    color: #3E3175;
+}
+
+.block {
+    padding-top: 15px;
+    margin-left: 40px;
+    margin-right: 15px;
+}
+
+#main-requester{
+	height: 400px;
+}
+.naked-list {
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
+.button-row {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.btn-app {
+    color: #fff;
+    background-color: #d92231;
+    border-color: #d92231;
+}
+
+.btn-spacing {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.btn-app:hover, .btn-app:focus, .btn-app:active, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: #C0161E;
+    border-color: #C0161E;
+}
+
+.panel-body a:link:not(.btn):not(.help-btn):not(.active),
+.panel-body a:active:not(.btn):not(.help-btn):not(.active),
+.panel-body a:visited:not(.btn):not(.help-btn):not(.active) {
+    color: #d92231;
+    text-decoration: none !important;
+}
+
+/* please don't move in the csu-skin*/
+.navbar-default .nav > li > a:hover, .navbar-default .nav > li > a:focus {
+    color: #fff!important;
+}
+
+a:hover:not(.btn):not(.help-btn):not(.active):not(.close) {
+    color: #d92231;
+    text-decoration: underline !important;
+}
+
+
+a.help-btn, a.help-btn:link, a.help-btn:active, a.help-btn:visited, a.help-btn:hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+.start-panel {
+    border: 2px solid #3E3175;
+    padding: 12px 12px;
+    vertical-align: middle;
+    display: inline-block;
+    table-layout: fixed;
+    width: 212px;
+    height: 170px;
+    /* From bootstrap.col-md-4 */
+    float: none;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: 4px;
+}
+
+.start-panel-content-row {
+    height: 108px;
+    width: 100%;
+    text-align: center;
+    display: table;
+}
+
+.start-panel-content {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 14px !important;
+    color: #3E3175;
+    font-weight: bold;
+}
+
+.start-panel-button-row {
+    width: 100%;
+}
+
+.start-panel-row {
+    float: none;
+    margin: 0 auto;
+}
+
+.start-panel-info {
+    font-size: 18px !important;
+}
+
+
+/* Form styles */
+.step {
+    font-weight: bold;
+}
+
+.step > h3 {
+    margin-bottom: 20px;
+}
+
+.step-content {
+    line-height: 1.5em;
+    margin-top: 10px;
+}
+
+.step-heading {
+    font-weight: bold;
+    margin-left: -25px;
+    margin-bottom: 15px;
+}
+
+.next-step {
+    border-top: 1px solid #d9d9d9;
+    padding-top: 15px;
+    margin-top: 10px;
+}
+
+.step-level {
+    color: #7F7F7F;
+}
+
+.input-group-help {
+    border-radius: 4px !important;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.input-group-btn .help-btn {
+    padding-left: 10px;
+}
+
+span.help-btn {
+    margin-right: 15px;
+}
+
+.help-text {
+    margin-left: 15px;
+}
+
+.form-row {
+    /*padding-top: 8px;*/
+    /*padding-bottom: 8px;*/
+    margin: 8px 0 8px 0;
+}
+
+.form-row-spacer {
+    padding-top: 10px;
+}
+
+.hidden-row {
+    display: none;
+}
+
+input.form-control {
+    margin-right: 20px;
+    width: calc(100% - 20px);
+}
+
+i.form-control-feedback {
+    top: 20px;
+    right: 0;
+}
+
+.input-group {
+    padding-right: 20px;
+}
+
+.subjectDivider {
+    width: 95%;
+}
+
+.hr-divider {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+/* override form */
+select {
+    font-style: normal;
+    font-weight: normal;
+
+}
+
+
+.subjectOutlineLink {
+    margin-left: 5px;
+    font-weight: normal;
+}
+
+.addSubjectButton {
+    display: inline-block;
+}
+
+.addSubjectButton .btn[disabled] {
+    pointer-events: none;
+    cursor: not-allowed;
+}
+
+.addDocumentButton {
+    display: inline-block;
+}
+
+.addDocumentButton .btn[disabled] {
+    pointer-events: none;
+    cursor: not-allowed;
+}
+
+/* Modals */
+
+.vertical-alignment-helper {
+    display:table;
+    height: 100%;
+    width: 100%;
+    pointer-events:none;
+}
+.vertical-align-center {
+    /* To center vertically */
+    display: table-cell;
+    vertical-align: middle;
+    pointer-events:none;
+}
+
+.confirm-modal-content {
+    padding: 20px;
+    padding-top: 40px;
+    /* Bootstrap sets the size of the modal in the modal-dialog class, we need to inherit it */
+    width:inherit;
+    height:inherit;
+    /* To center horizontally */
+    margin: 0 auto;
+    pointer-events:all;
+}
+
+.modal-button-row {
+    /*padding-top: 30px;*/
+}
+
+.modal-lightbox {
+    /* new custom width */
+    width:  600px;
+    height: 600px;
+    /* must be half of the width, minus scrollbar on the left (30px) */
+    
+}
+
+.modal-lightbox-body {
+    /* new custom width */
+    width:  580px;
+    height: 580px;
+    /* must be half of the width, minus scrollbar on the left (30px) */
+    
+}
+
+/*Start Wizard*/
+
+.bootstrapWizard {
+    display: block;
+    list-style: none;
+    padding: 10px;
+    position: relative;
+    width: 200%;
+}
+
+.bootstrapWizard a:hover,.bootstrapWizard a:active, .bootstrapWizard a:focus {
+    text-decoration: none !important;
+}
+
+.bootstrapWizard li {
+    display: block;
+    float: left;
+    width: 25%;
+    text-align: center;
+    padding-left: 0
+}
+
+.bootstrapWizard li:before {
+    border-top: 3px solid #3E3175;
+    content: "";
+    display: block;
+    font-size: 0;
+    overflow: hidden;
+    position: relative;
+    top: 11px;
+    right: 1px;
+    width: 100%;
+    z-index: 1
+}
+
+.bootstrapWizard li:first-child:before {
+    left: 50%;
+    max-width: 50%
+}
+
+.bootstrapWizard li:last-child:before {
+    max-width: 50%;
+    width: 50%
+}
+
+.bootstrapWizard li.complete .step {
+    background: #3E3175;
+    padding: 1px 6px;
+    border: 3px solid #55606E
+}
+
+.bootstrapWizard li .step i {
+    font-size: 10px;
+    font-weight: 400;
+    position: relative;
+    top: -1.5px
+}
+
+.bootstrapWizard li .step {
+    background: #B2B5B9;
+    color: #fff;
+    display: inline;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 12px;
+    padding: 7px 13px;
+    border: 3px solid transparent;
+    border-radius: 50%;
+    line-height: normal;
+    position: relative;
+    text-align: center;
+    z-index: 2;
+    transition: all .1s linear 0s
+}
+
+.bootstrapWizard li.active .step,.bootstrapWizard li.active.complete .step {
+    background: #3E3175;
+    color: #fff;
+    font-weight: 700;
+    padding: 7px 13px;
+    font-size: 15px;
+    border-radius: 50%;
+    border: 3px solid #3E3175
+}
+
+.bootstrapWizard li.complete .title,.bootstrapWizard li.active .title {
+    color: #2B3D53
+}
+
+.bootstrapWizard li .title {
+    color: #bfbfbf;
+    display: block;
+    font-size: 13px;
+    line-height: 15px;
+    max-width: 100%;
+    position: relative;
+    table-layout: fixed;
+    text-align: center;
+    top: 20px;
+    word-wrap: break-word;
+    z-index: 104
+}
+
+.wizard-actions {
+    display: block;
+    list-style: none;
+    padding: 0;
+    position: relative;
+    width: 100%
+}
+
+.wizard-actions li {
+    display: inline
+}
+
+.tab-content.transparent {
+    background-color: transparent
+}
+
+/*End Wizard*/
+
+@media only screen and (max-width: 991px) {
+    .container-fluid {
+        padding-right: 0;
+    }
+    .navbar-collapse.collapse {
+        display: none !important;
+    }
+
+    .navbar-collapse.collapse.in {
+        display: block !important;
+    }
+
+    .navbar-header .collapse, .navbar-toggle {
+        display:block !important;
+    }
+
+    .navbar-header {
+        float:none;
+        border-bottom: none;
+    }
+
+    .hidden-title {
+        display: none !important;
+    }
+
+    .form-row-mobile {
+        margin: 8px 0 8px 0;
+    }
+
+
+}
+
+
+@media (max-width: 767px) {     .pull-left-sm {         float: left!important;
+} }
+
+@media (min-width: 768px) {
+    .confirm-modal {
+        width: 400px;
+        margin: 30px auto;
+    }
+
+    .form-mixed .form-group {
+        vertical-align: middle;
+    }
+
+    .form-mixed .form-control {
+        vertical-align: middle;
+    }
+}
+
+/* File upload */
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+
+/* custom label */
+.spcon-label {
+  /*display: inline-block;*/
+  /*max-width: 100%;*/
+  /*margin-bottom: 5px;
+  margin-top: 5px;*/
+  font-weight: normal;
+}
+
+.spcon-label strong{
+    margin-top: 4px;
+}
+
+.spcon-label-disabled {
+   color: darkgrey;
+   /*background-color: grey;*/
+}
+
+.spcon-label-horiz {
+    line-height: 2.4;
+}
+
+.col-push-exsmall {
+  left: 2.33333333%;
+}
+
+.col-push-small {
+  left: 4.33333333%;
+}
+
+
+.action-req{
+	background-color: #FFCCCC;
+	color: black;
+	border: 1px solid red;
+}
+.declined{
+	background-color: #404040;
+}
+.varied{
+	background-color: #A67048;
+}
+.not-submitted{
+    color: #ffffff;
+    background-color: #808080;
+}
+.col-push-medium {
+  left: 10.33333333%;
+}
+
+.col-push-large {
+  left: 12.33333333%;
+}
+
+.no-evidence{
+	color: black;
+	background-color: #FFE699;
+	border: 1px solid #FFC000;
+}
+
+.expired{
+	background-color: #7F7F7F;
+}
+
+#notify {
+    background: transparent url(skin/exclamation-dark-red.png) 9.9em 44% no-repeat;
+    background-size: 14px 14px;
+}
+
+.datepicker table tr td.disabled,.datepicker table tr td.disabled:hover{
+    background:0 0;
+    color:#777;
+    cursor:default;
+    text-decoration: line-through;
+}
+
+.datepicker table tr td.day:hover,.datepicker table tr td.focused{
+    color: #ffffff;
+    background:#99ccff;
+    cursor:pointer;
+}
+
+#scApplicationReasonForm .has-feedback .form-control-feedback {
+    position: absolute;
+    top: 15px;
+    right: 55px;
+    display: block;
+    width: 34px;
+    height: 34px;
+    line-height: 34px;
+    text-align: left;
+}
+
+p a {
+    color: #d92231 !important;
+    text-decoration: none;
+    }
+
+.popover-title .close{
+        position: relative;
+        bottom: 3px;
+    }
+
+.exSmallText{
+    font-size: 62.5%;
+}
+
+.pad-left-5em{
+     padding-left:5em;
+}
+
+.pad-left-15px{
+     padding-left:15px;
+}
+
+.csu-link {
+    color: #D92231 !important;
+
+}
+
+.btn.csu-link {
+    padding: 0;
+}
+
+.csu-canvas
+{
+    width:100%;
+    height:100%;
+}
+
+.selDetail{
+	  width: 89%;
+}
+.critical-incident-label{
+	display: inline;
+    font-weight: bold;
+}
+
+.critical-incident-text{
+	 margin-top: 2px;
+}
+.critical-warning{
+	    margin-top: 15px;
+}
+.subject-info{
+	    margin-top: 15px;
+}
+.extension-date-div i.form-control-feedback{
+	 top: 26px;
+}
+.back-link{
+	color: #d92231 !important;
+}
+
+#skiptocontent a {
+	padding:6px;
+	position: absolute;
+	top:-40px;
+	left:0px;
+	color:#000000;
+	border-right:1px solid white;
+	border-bottom:1px solid white;
+	border-bottom-right-radius:8px;
+	background:transparent;
+	-webkit-transition: top 1s ease-out, background 1s linear;
+    transition: top 1s ease-out, background 1s linear;
+    z-index: 100;
+}
+
+#skiptocontent a:focus {
+	position:absolute;
+	left:0px;
+	top:0px;
+	background:#FFFFFF;
+	outline:0;	
+	-webkit-transition: top .1s ease-in, background .5s linear;
+    transition: top .1s ease-in, background .5s linear;
+}
+
+a.external {
+    background: url(http://www.csu.edu.au/__data/assets/image/0010/186706/external-link-red.png?v=0.1.1) no-repeat scroll right top rgba(0, 0, 0, 0);
+    margin-right: 2px;
+    padding-right: 13px !important;
+}

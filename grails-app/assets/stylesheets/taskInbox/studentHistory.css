@@ -1,0 +1,212 @@
+.summary {
+	font-size: 0; /*fix white space*/
+	width: 80%;
+}
+.summary > div {
+	font-size: 16px; /*reset font size*/
+	display: inline-block;
+	vertical-align: top;
+	width: 25%;
+	/*border: 1px solid red;
+	box-sizing: border-box;*/
+	text-align: center;
+}
+@media (max-width: 480px) { /*breakpoint*/
+	.summary > div {
+		display: block;
+		width: 100%;
+	}
+}
+
+.number-value-blue{
+	color:#337ab7;
+	font-size: 41px;
+}
+
+.number-value-red{
+	color:#d9534f;
+	font-size: 41px;
+}
+
+.number-value-yellow{
+	color:#f0ad4e;
+	font-size: 41px;
+}
+
+.number-value-light-blue{
+	color:#5bc0de;
+	font-size: 41px;
+}
+
+#studentHistoryTbl_wrapper .bottom .dataTables_length {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+#studentHistoryTbl th{
+	color: #fff;
+	background-color: #404040;
+	border-color: #fff;
+	border: 1px solid #fff
+}
+
+#studentHistoryTbl tr td{
+	border: 1px solid #fff
+}
+.search-tbl{
+	padding-top: 25px
+}
+
+.top .dataTables_filter
+{
+    margin-bottom: 15px;
+    
+}
+
+
+.btn-red{
+	  background-color: #d70000;
+	  color: #fff;
+}
+
+
+
+.inner-addon {
+  position: relative;
+}
+
+/* style glyph */
+.inner-addon .glyphicon {
+  position: absolute;
+  padding: 10px;
+  pointer-events: none;
+  padding-right: 22px;
+}
+
+/* align glyph */
+
+.right-addon .glyphicon { right: 1px;}
+
+/* add padding  */
+
+.right-addon input { padding-right: 30px; }
+
+
+.sel-assignment{
+	 width: 50%;
+}
+
+.filter-div{
+	padding-top: 45px;
+}
+
+.span-assign, .student-number, .student-name{
+	padding-top: 7px;
+}
+.filter-div .student-number{
+	display: inline-block;
+	vertical-align: top;
+	width: 15%;
+}
+
+.filter-div .student-name{
+	display: inline-block;
+	vertical-align: top;
+	width: 28%;
+}
+
+.filter-div .span-assign{
+	display: inline-block;
+	vertical-align: top;
+	width: 22%;
+}
+
+.filter-div .student-number{
+	display: inline-block;
+	vertical-align: top;
+	width: 15%;
+}
+
+.filter-div .student-name{
+	display: inline-block;
+	vertical-align: top;
+	width: 28%;
+}
+
+.filter-div .input-search{
+	display: inline-block;
+	vertical-align: top;
+	width: 20%;
+}
+
+
+.filter-div .icon-search{
+	display: inline-block;
+	vertical-align: top;
+	width: 5%;
+}
+
+.filter-div .btn-assign
+{
+	display: inline-block;
+	vertical-align: top;
+	width: 1%;
+	text-align: right;
+}
+#bottom-filter-div .span-assign{
+	
+	width: 66%;
+    text-align: right;
+}
+
+@media (max-width: 480px) { /*breakpoint*/
+	.filter-div > div {
+		display: block;
+		width: 100%;
+	}
+}
+
+.info-div{
+	
+}
+.info-div .info-heading{
+	display: inline-block;
+	vertical-align: top;
+	width: 59%;
+	text-align:left;
+}
+
+.info-div .info-button{
+	display: inline-block;
+	vertical-align: top;
+	width: 40%;
+	text-align:right;
+}
+
+.btn-black{
+	  border-color: #000000;
+	  color: #000000;
+}
+
+.ui-draggable, .ui-droppable {
+	background-position: top;
+}
+
+#row_checkbox{
+	text-align: center;
+}
+
+#main-nav{
+	margin-left:0px;
+}
+
+#tags{
+	width: 105%;
+}
+
+.inner-addon .glyphicon{
+	padding-right: 8px;
+}
+#tags_bottom{
+	width: 105%;
+}

@@ -1,0 +1,245 @@
+body {
+ 	font-family: 'Open Sans';
+ 	background-color: #f5f5f5;
+ }
+
+/* Override bootstrap definitions */
+
+.navbar {
+    margin-bottom: 0;
+    min-height: 20px;
+    border-radius: 0;
+}
+.navbar-default {
+    background-color: #fbfbfb;
+}
+.nav > li > a:hover, .nav > li > a:focus {
+    text-decoration: underline;
+    background-color: #E3E3E3;
+    color: #868686;
+}
+.navbar-header {
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #c0c0c0;
+}
+.navbar-header > * {
+    vertical-align: middle;
+}
+.navbar-toggle {
+    float: left;
+    margin: 20px 15px;
+}
+a.navbar-brand {
+    display: inline-block;
+    float: none;
+    height: auto;
+    margin-left: calc(50% - 160px); /* half image width + navbar-toggle width */
+}
+.breadcrumb {
+	font-size: 13px;
+	color: #656565;
+	white-space: nowrap;
+    padding: 8px 15px;
+    padding-top: 4px;
+    padding-right: 15px;
+    padding-bottom: 8px;
+    padding-left: 15px;
+}
+
+.breadcrumb > li + li:before {
+    color: #ccc;
+    content: "> ";
+    padding: 0 5px;
+}
+
+.breadcrumb > li > a {
+    color: #D92231 !important;
+}
+
+@media (max-width: 991px)
+{
+    .navbar-nav {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    ul.navbar-nav:not(:last-of-type) {
+        border-bottom: 1px solid #c0c0c0;
+    }
+    .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+        background-color: #fff;
+    }
+
+    .block {
+        padding-left: 0;
+        margin-left: 0;
+    }    
+}
+
+@media (min-width: 992px)
+{
+    .navbar-default {
+        background-color: #474746;
+        border-color: #080808;
+    }
+    .navbar-default .navbar-nav > li > a {
+        color: #fff;
+    }
+    .navbar-default .nav > li > a:hover, .navbar-default .nav > li > a:focus {
+        color: #fff;
+    }
+    .navbar-nav > li > a {
+        padding-top: 6px;
+        padding-bottom: 6px;
+    }
+
+}
+/* Header, Footer */
+
+h1, h2, h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+header {
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #c0c0c0;
+}
+footer {
+    color: #686868;
+    border-top: 1px solid #c0c0c0;
+}
+.branding {
+    padding-left: 1.9em;
+    vertical-align: middle;
+    background-color: #ffffff;
+}
+.branding-header {
+    height: 80px;
+    padding-top: 10px;
+}
+
+#global-title {
+    padding-left: 10px;
+}
+
+footer .branding {
+    padding: 1.4em;
+    margin-right:0;
+}
+.branding div {
+    display: inline-block;
+}
+.branding .logo {
+    padding-right: 5em;
+    height: 63px;
+    padding-top: 7px;
+}
+.social-media-links a {
+    margin: 10px;
+    display: inline-block;
+}
+footer .info {
+    padding: 1.4em;
+}
+footer p {
+    margin: 0;
+}
+footer .owner-info p {
+    text-align: right;
+}
+footer .info .links {
+    margin-bottom: 25px;
+}
+footer .info .links .seperator {
+    border-right: 1px solid #c0c0c0;
+    margin: 0 10px;
+}
+
+footer .links a {
+    color:#d92231;
+}
+
+.container {
+    width: 100%;
+}
+.vertical-line {
+    height: 50px;
+    border-right: 1px #EFEFEF;
+    border-right-style:  solid;
+}
+
+/* Sidebar */
+
+#sidebar {
+    border-right: 1px solid #c0c0c0;
+    background-color: #ffffff;
+    padding: 0;
+    width: 280px;
+}
+
+#sidebar > ul:first-child {
+  margin-top: 8px !important;
+}
+
+#sidebar > ul > li > a {
+    height: 70px !important;
+    padding: 26px !important;
+    color: #000 !important;
+    background-color: #ffffff !important;
+}
+
+#sidebar > ul > li > a:focus  {
+  font-weight: bold !important;
+  background-color: #F2F2F2 !important;
+}
+
+/* Main nav */
+
+#main {
+    background-color: #f5f5f5;
+}
+
+#main-nav .pull-left {
+    font-size:  13px;
+    height: 40px;
+}
+#main-nav{
+    height: 30px;
+}
+
+/* Page content */
+
+#page-content-container > .row {
+    display: flex;
+}
+#page-content .panel {
+    border: 1px solid #d9d9d9;
+    margin-bottom: 15px;
+}
+#page-content .panel {
+    box-shadow: none;
+}
+
+#page-content .panel-default {
+    box-shadow: none;
+}
+
+#page-content .panel-body {
+    padding-left: 17px;
+    padding-right: 17px;
+    padding-bottom: 17px;
+    /*border: 1px solid #D9D9D9; */
+}
+
+
+
+.text-block {
+    white-space: pre-wrap;
+}
+
+.fullWidth {
+   width: 100%;
+   margin-left: auto;
+   margin-right: auto;
+   max-width: initial;
+   margin-top: 10px;
+}

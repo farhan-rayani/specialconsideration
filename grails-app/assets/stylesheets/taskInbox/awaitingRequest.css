@@ -1,0 +1,175 @@
+.info-div{
+	margin-bottom: 40px;
+}
+.summary {
+	font-size: 0; /*fix white space*/
+	width: 80%;
+}
+.summary > div {
+	font-size: 16px; /*reset font size*/
+	display: inline-block;
+	vertical-align: top;
+	width: 25%;
+	/*border: 1px solid red;
+	box-sizing: border-box;*/
+	text-align: center;
+}
+@media (max-width: 480px) { /*breakpoint*/
+	.summary > div {
+		display: block;
+		width: 100%;
+	}
+}
+
+.number-value-blue{
+	color:#337ab7;
+	font-size: 41px;
+}
+
+.number-value-red{
+	color:#d9534f;
+	font-size: 41px;
+}
+
+.number-value-yellow{
+	color:#f0ad4e;
+	font-size: 41px;
+}
+
+.number-value-light-blue{
+	color:#5bc0de;
+	font-size: 41px;
+}
+
+.dataTables_length {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+#searchTbl th{
+	color: #fff;
+	background-color: #404040;
+	border-color: #fff;
+	border: 1px solid #fff;
+}
+
+#searchTbl tr td{
+	border: 1px solid #fff
+}
+.search-tbl{
+	padding-top: 25px
+}
+
+.top .dataTables_filter
+{
+    margin-bottom: 15px;
+    
+}
+
+
+.btn-default{
+	  background-color: #d70000;
+	  color: #fff;
+}
+
+
+
+.inner-addon {
+  position: relative;
+}
+
+/* style glyph */
+.inner-addon .glyphicon {
+  position: absolute;
+  padding: 10px;
+  pointer-events: none;
+  padding-right: 22px;
+}
+
+/* align glyph */
+
+.right-addon .glyphicon { right: 1px;}
+
+/* add padding  */
+
+.right-addon input { padding-right: 30px; }
+
+
+.sel-assignment{
+	 width: 90%;
+}
+
+.filter-div{
+	padding-top: 45px;
+}
+
+.filter-div .sel-assign{
+	display: inline-block;
+	vertical-align: top;
+	width: 25%;
+	float: left;
+}
+
+.filter-div .span-assign{
+	display: inline-block;
+	vertical-align: top;
+	width: 38%;
+	padding-top: 7px;
+	text-align: right;
+}
+
+.filter-div .input-search{
+	display: inline-block;
+	vertical-align: top;
+	width: 20%;
+}
+
+
+.filter-div .icon-search{
+	display: inline-block;
+	vertical-align: top;
+	width: 5%;
+}
+
+.filter-div .btn-assign
+{
+	display: inline-block;
+	vertical-align: top;
+	width: 6%;
+	text-align: right;
+	/*float:right;*/
+}
+#bottom-filter-div .span-assign{
+	width: 64%;
+    text-align: right;
+}
+.block {
+	border:1px solid lightgray;
+}
+
+.ui-draggable, .ui-droppable {
+	background-position: top;
+}
+
+#row_checkbox{
+	text-align: center;
+}
+#main-nav{
+	margin-left:0px;
+}
+#tags{
+	width: 105%;
+}
+
+.inner-addon .glyphicon{
+	padding-right: 8px;
+}
+#tags_bottom{
+	width: 105%;
+}
+
+.input-add{
+	    border-left: 1px solid #ccc !important;
+	    border-right: 1px solid #ccc !important;
+	    height:34px;
+}

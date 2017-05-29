@@ -1,0 +1,15 @@
+.dataTables_length {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+#trackingTbl th{
+	color: #fff;
+	background-color: #404040;
+	border-color: #fff;
+	border: 1px solid #fff
+}
+
+#trackingTbl tr td{
+	border: 1px solid #fff
+}

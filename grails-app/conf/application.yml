@@ -1,0 +1,217 @@
+---
+hibernate:
+    cache:
+        queries: false
+        use_second_level_cache: true
+        use_query_cache: false
+        region.factory_class: 'org.hibernate.cache.ehcache.EhCacheRegionFactory'
+
+dataSource:
+    pooled: true
+    jmxExport: true
+
+environments:
+    development:
+        csuapi:
+            url: http://localhost:8080/api
+        csubpm:
+            url: https://wmbpmdev01n01.csumain.csu.edu.au:5555/
+            user: webuser
+            password: webuser
+        csutask:
+            url: http://wmbpmdev.csumain.csu.edu.au:5555/
+            user: webuser
+            password: webuser
+        dataSource:
+            dbCreate: validate
+            username: spcon_app
+            password: optima3
+            driverClassName: oracle.jdbc.OracleDriver
+            url: jdbc:oracle:thin:@(DESCRIPTION_LIST=(LOAD_BALANCE=off)(FAILOVER=on)(DESCRIPTION=(CONNECT_TIMEOUT=5)(ADDRESS_LIST=(LOAD_BALANCE=on)(ADDRESS=(PROTOCOL=TCP)(HOST=racdev01-scan.csumain.csu.edu.au)(PORT=1521)))(CONNECT_DATA=(SERVICE_NAME=dev1ban_ha.csumain.csu.edu.au)))(DESCRIPTION=(CONNECT_TIMEOUT=5)(ADDRESS_LIST=(LOAD_BALANCE=on)(ADDRESS=(PROTOCOL=TCP)(HOST=racdevdr01-scan.csumain.csu.edu.au)(PORT=1521)))(CONNECT_DATA=(SERVICE_NAME=dev1ban_ha.csumain.csu.edu.au))))
+            maxActive: 20
+            maxIdle: 10
+            maxAge: 300000
+            validationInterval: 5000
+            validationQuery: select 1 from dual
+        logoutURL: http://localhost:8080/
+        grails:
+            serverURL: http://localhost:8080
+            mail:
+                host: smtp.csu.edu.au
+                port: 25
+                overrideAddress: Special Consideration Development<app-dev-testing@csu.edu.au>
+                default:
+                    from: Special Consideration Development<no-reply@csu.edu.au>  
+        criticalIncident:
+                  visible: 1
+                  incident: Cyclone Debbie
+                  
+    test:
+        csuapi:
+            url: http://localhost:8080/api
+        csubpm:
+            url: https://wmbpmdev01n01.csumain.csu.edu.au:5555/
+            user: webuser
+            password: webuser
+        csutask:
+            url: http://wmbpmdev.csumain.csu.edu.au:5555/
+            user: webuser
+            password: webuser
+        dataSource:
+            dbCreate: update
+            url: jdbc:h2:mem:testDb;MVCC=TRUE;LOCK_TIMEOUT=10000;DB_CLOSE_ON_EXIT=FALSE
+    devServer:
+        csuapi:
+            url: https://appsdevel.csu.edu.au/specialcons/api
+        csubpm:
+            url: https://wmbpmdev01n01.csumain.csu.edu.au:5555/
+            user: webuser
+            password: webuser
+        csutask:
+            url: http://wmbpmdev.csumain.csu.edu.au:5555/
+            user: webuser
+            password: webuser
+        dataSource:
+            dbCreate: 
+            driverClassName: oracle.jdbc.OracleDriver
+            jndiName: java:comp/env/jdbc/specialconsDB
+        logoutURL: https://appsdevel.csu.edu.au/tc7/Shibboleth.sso/Logout
+        grails:
+            serverURL: http://appsdevel.csu.edu.au/specialcons
+            mail:
+                host: smtp.csu.edu.au
+                port: 25
+                overrideAddress: Special Consideration Development<app-dev-testing@csu.edu.au>
+                default:
+                    from: Special Consideration Development<no-reply@csu.edu.au>        
+        criticalIncident:
+                  visible: 1
+                  incident: Cyclone Debbie
+                     
+    qaServer:
+        csuapi:
+            url: https://appsqa.csu.edu.au/specialcons/api
+        csubpm:
+            url: https://wmbpmdev01n01.csumain.csu.edu.au:5555/
+            user: webuser
+            password: webuser
+        dataSource:
+            dbCreate: validate
+            username: spcon_app
+            password: optima3
+            driverClassName: oracle.jdbc.OracleDriver
+            url: jdbc:oracle:thin:@(DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)(HOST = racqa01-scan.csumain.csu.edu.au)(PORT = 1521)) (ADDRESS = (PROTOCOL = TCP)(HOST = racqadr01-scan.csumain.csu.edu.au)(PORT = 1521)) (LOAD_BALANCE = YES) (CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME = qa1ban_ha.csumain.csu.edu.au) (FAILOVER_MODE = (TYPE = SELECT) (METHOD = BASIC) (RETRIES = 60) (DELAY = 1) ) ) )
+            maxActive: 20
+            maxIdle: 10
+            maxAge: 300000
+            validationInterval: 5000
+            validationQuery: select 1 from dual
+        ldapSource:
+            jndiName: java:comp/env/ldap/group
+        logoutURL: https://appsqa.csu.edu.au/tc7/Shibboleth.sso/Logout
+        grails:
+            serverURL: http://appsqa.csu.edu.au/specialcons
+        criticalIncident:
+            visible: 1
+            incident: Cyclone Debbie
+            
+    production:
+        csuapi:
+            url: https://apps.csu.edu.au/specialcons/api
+        csubpm:
+            url: https://wmbpmdev01n01.csumain.csu.edu.au:5555/
+            user: webuser
+            password: webuser
+        dataSource:
+            dbCreate: 
+            driverClassName: oracle.jdbc.OracleDriver
+            jndiName: java:comp/env/jdbc/specialconsDB
+        ldapSource:
+            jndiName: java:comp/env/ldap/group
+        logoutURL: https://apps.csu.edu.au/tc7/Shibboleth.sso/Logout
+        grails:
+            serverURL: http://apps.csu.edu.au
+        criticalIncident:
+            visible: 1
+            incident: Cyclone Debbie
+---
+server:
+    sessionTimeout: 3600 #seconds
+  
+---
+grails:
+    profile: web
+    codegen:
+        defaultPackage: specialcons
+    spring:
+        transactionManagement:
+            proxies: false
+info:
+    app:
+        name: '@info.app.name@'
+        version: '@info.app.version@'
+        grailsVersion: '@info.app.grailsVersion@'
+spring:
+
+    groovy:
+        template:
+            check-template-location: false
+
+---
+grails:
+    mime:
+        disable:
+            accept:
+                header:
+                    userAgents:
+                        - Gecko
+                        - WebKit
+                        - Presto
+                        - Trident
+        types:
+            all: '*/*'
+            atom: application/atom+xml
+            css: text/css
+            csv: text/csv
+            form: application/x-www-form-urlencoded
+            html:
+              - text/html
+              - application/xhtml+xml
+            js: text/javascript
+            json:
+              - application/json
+              - text/json
+            multipartForm: multipart/form-data
+            pdf: application/pdf
+            rss: application/rss+xml
+            text: text/plain
+            hal:
+              - application/hal+json
+              - application/hal+xml
+            xml:
+              - text/xml
+              - application/xml
+    urlmapping:
+        cache:
+            maxsize: 1000
+    controllers:
+        defaultScope: singleton
+        upload:
+            maxFileSize: 9999999999
+            maxRequestSize: 9999999999
+    converters:
+        encoding: UTF-8
+    views:
+        default:
+            codec: html
+        gsp:
+            encoding: UTF-8
+            htmlcodec: xml
+            codecs:
+                expression: html
+                scriptlets: html
+                taglib: none
+                staticparts: none
+endpoints:
+    jmx:
+        unique-names: true
